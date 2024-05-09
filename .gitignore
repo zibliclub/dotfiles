@@ -1,2 +1,5 @@
 nvim-new.bak
 nvim-old.bak
+
+.luarc.json
+lazy-lock.json
