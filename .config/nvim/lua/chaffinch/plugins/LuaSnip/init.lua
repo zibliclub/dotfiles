@@ -26,14 +26,11 @@ return {
 
 		require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/snippets" })
 
-		vim.keymap.set({ "i" }, "<Tab>", function()
+		vim.keymap.set({ "i" }, "j<Tab>", function()
 			ls.expand()
 		end, { silent = true })
 		vim.keymap.set({ "i", "s" }, "jk", function()
 			ls.jump(1)
-		end, { silent = true })
-		vim.keymap.set({ "i", "s" }, "kj", function()
-			ls.jump(-1)
 		end, { silent = true })
 	end,
 }
