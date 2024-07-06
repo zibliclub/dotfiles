@@ -1,0 +1,10 @@
+# GENERAL SETTINGS
+# --------------------------------------------- #
+set selection-clipboard   clipboard
+set window-title-basename false
+set statusbar-home-tilde  false
+# set recolor               true
+
+set guioptions none
+
+include catppuccin-mocha

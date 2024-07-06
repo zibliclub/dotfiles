@@ -1,3 +1,4 @@
+
 [colors.primary]
 background = "#1e1e2e"
 foreground = "#cdd6f4"
@@ -73,3 +74,4 @@ color = "#fab387"
 [[colors.indexed_colors]]
 index = 17
 color = "#f5e0dc"
+
