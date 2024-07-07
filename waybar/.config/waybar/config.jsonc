@@ -1,0 +1,44 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+    ],
+    "modules-right": [
+        "clock",
+        "pulseaudio",
+        "network"
+    ],
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5"
+        }
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%d.%m.%Y}",
+        "format": "\uf017  {:%H:%M}"
+    },
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-muted": "0% {icon} ",
+        "format-icons": ["", "", ""]
+    },
+    "network": {
+        "format-ethernet": "  Ethernet",
+        "format-disconnected": "", 
+        "on-click": "alacritty -e 'nmtui'"
+    }
+}
