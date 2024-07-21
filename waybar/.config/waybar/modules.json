@@ -1,0 +1,30 @@
+{
+  "hyprland/workspaces": {
+    "disable-scroll": true
+  },
+
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%d.%m.%Y}",
+    "format": "\uf017  {:%H:%M}"
+  },
+
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-muted": "0% {icon} ",
+    "format-icons": ["", "", ""],
+    "on-click": "pavucontrol"
+  },
+
+  "network": {
+    "format-ethernet": "  Ethernet",
+    "format-disconnected": "", 
+    "on-click": "alacritty -e 'nmtui'"
+  },
+
+  "custom/exit": {
+    "format": " ",
+    "on-click": "wlogout",
+    "tooltip-format": "Power Menu"
+  }
+}

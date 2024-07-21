@@ -52,7 +52,8 @@ window#waybar {
 
 #network,
 #clock,
-#pulseaudio {
+#pulseaudio,
+#custom-exit {
   background-color: @surface0;
   margin: 0 10px 0 10px;
   border-radius: 1rem;
@@ -63,7 +64,7 @@ window#waybar {
 }
 
 #network {
-    color: @flamingo;
+  color: @flamingo;
 }
 
 #pulseaudio {
@@ -71,14 +72,18 @@ window#waybar {
 }
 
 #pulseaudio.muted {
-    color: @red;
+  color: @red;
+}
+
+#custom-exit {
+  color: @red;
 }
 
 tooltip {
-    background: @base;
-    border: 1px solid @pink;
+  background: @base;
+  border: 1px solid @pink;
 }
 
 tooltip label {
-    color: @text;
+  color: @text;
 }

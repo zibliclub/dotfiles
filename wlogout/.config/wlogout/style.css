@@ -1,0 +1,62 @@
+@import "mocha.css";
+
+* {
+  font-family: "JetBrainsMono Nerd";
+	background-image: none;
+	transition: 10ms;
+}
+
+window {
+  background: url("catppuccin-shoreline-blurred.png");
+}
+
+button {
+	color: @text;
+  font-size: 14px;
+
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: 20%;
+
+	border-style: solid;
+	background-color: @base;
+	border: 3px solid @overlay2;
+
+}
+
+button:focus,
+button:active,
+button:hover {
+  color: @lavender;
+	background-color: @mantle;
+	border: 3px solid @lavender;
+}
+
+#lock,
+#logout,
+#suspend,
+#hibernate,
+#shutdown,
+#reboot {
+  margin: 10px;
+  border-radius: 20px;
+}
+
+#lock {
+	background-image: image(url("icons/lock.png"));
+}
+#logout {
+	background-image: image(url("icons/logout.png"));
+}
+#suspend {
+	background-image: image(url("icons/suspend.png"));
+}
+#hibernate {
+	background-image: image(url("icons/hibernate.png"));
+}
+#shutdown {
+	background-image: image(url("icons/shutdown.png"));
+}
+#reboot {
+	background-image: image(url("icons/reboot.png"));
+}
