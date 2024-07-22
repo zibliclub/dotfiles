@@ -26,5 +26,14 @@
     "format": " ",
     "on-click": "wlogout",
     "tooltip-format": "Power Menu"
+  },
+
+  "custom/yandexmusic": {
+    "exec": "/usr/bin/python3 ~/.config/scripts/mediaplayer.py --player chromium",
+    "format": "{}",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous"
   }
 }

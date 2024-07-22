@@ -13,6 +13,13 @@
   margin: 7px 20px 0 0;
 }
 
+.modules-center {
+  border-radius: 2rem;
+  background-color: @surface0;
+  margin-top: 1rem;
+  margin: 7px 20px 0 0;
+}
+
 .modules-left {
   border-radius: 2rem;
   background-color: @surface0;
@@ -50,6 +57,7 @@ window#waybar {
   border-color: @surface1;
 }
 
+#custom-yandexmusic,
 #network,
 #clock,
 #pulseaudio,
@@ -57,6 +65,10 @@ window#waybar {
   background-color: @surface0;
   margin: 0 10px 0 10px;
   border-radius: 1rem;
+}
+
+#custom-yandexmusic {
+  color: @mauve;
 }
 
 #clock {
@@ -71,10 +83,7 @@ window#waybar {
   color: @pink;
 }
 
-#pulseaudio.muted {
-  color: @red;
-}
-
+#pulseaudio.muted,
 #custom-exit {
   color: @red;
 }
